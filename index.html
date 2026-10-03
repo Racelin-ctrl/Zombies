@@ -1736,7 +1736,7 @@ function spawnBoss(){
   y = clamp(y, 100, WORLD.h - 100);
   var boss = {
     x: x, y: y, type: 'boss', r: def.r,
-    hp: def.hp, maxHp: def.hp, speed: def.speed,
+    hp: def.hp * 4, maxHp: def.hp * 4, speed: def.speed,
     dmg: def.dmg, atkRate: 1.2, atkCd: 1.0,
     color: def.color, dark: def.dark,
     hitFlash: 0, kx: 0, ky: 0, dead: false,
