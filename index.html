@@ -3113,9 +3113,7 @@ function drawMenu(){
   ctx.restore();
   drawBtn(btnStartX + btnW + btnGap, 'AMIGOS', ['#1e88e5', '#0d47a1'], 'rgba(150,200,255,0.4)', 'multiplayer');
   drawBtn(btnStartX + (btnW + btnGap) * 2, 'TIENDA', ['#7e57c2', '#4a2a8a'], 'rgba(200,160,255,0.4)', 'shop');
-  if (!currentUser){
-    drawBtn(btnStartX + (btnW + btnGap) * 3, 'CUENTA', ['#546e7a', '#37474f'], 'rgba(180,200,210,0.4)', 'show-login');
-  }
+  drawBtn(btnStartX + (btnW + btnGap) * 3, 'CUENTA', ['#546e7a', '#37474f'], 'rgba(180,200,210,0.4)', 'show-login');
   ctx.textBaseline = 'alphabetic';
   ctx.font = '700 10px system-ui';
   ctx.fillStyle = 'rgba(120,120,120,0.45)';
